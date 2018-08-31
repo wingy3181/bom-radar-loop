@@ -1,0 +1,55 @@
+$default-width-height: 512;
+$default-height-width-legend: ($default-width-height * (557/512));
+
+.bom-radar-loop {
+    position: absolute; 
+    top: auto; 
+    left: auto; 
+    z-index: 0; 
+    padding: 0px; 
+    margin: 0px; 
+    background-color: transparent; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block; 
+    width: $default-width-height * 1px; 
+    height: $default-height-width-legend * 1px; 
+    > img {
+        width: $default-width-height * 1px; 
+        height: $default-width-height * 1px; 
+        background-color: transparent; 
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    > div {
+        width: $default-width-height * 1px; 
+        height: $default-width-height * 1px; 
+        background-color: transparent; 
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute; 
+        left: 0px; 
+        top: 0px;
+
+        &.background {
+            z-index: -3; 
+        }
+    
+        &.observations {
+            z-index: 9; 
+        }
+        
+        &.locations {
+            z-index: 7; 
+        }
+        
+        &.range {
+            z-index: 2; 
+        }
+        
+        &.topography {
+            z-index: -2; 
+        }
+    }
+}

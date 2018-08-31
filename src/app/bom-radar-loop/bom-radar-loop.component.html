@@ -1,0 +1,8 @@
+<div class="bom-radar-loop" [style.background-image]="legendBackgroundImageUrl">
+  <img class="animation" [src]="animationSrc" alt="Radar images">
+  <div class="background" [style.background-image]="backgroundBackgroundImageUrl"></div>
+  <div *ngFor="let url of observationsBackgroundImageUrls" [style.background-image]="url"></div>
+  <div class="locations" [style.background-image]="locationsBackgroundImageUrl"></div>
+  <div class="range" [style.background-image]="rangeBackgroundImageUrl"></div>
+  <div class="topography" [style.background-image]="topographyBackgroundImageUrl"></div>
+</div>
