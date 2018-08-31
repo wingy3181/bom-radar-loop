@@ -1,6 +1,7 @@
 {
   "name": "bom-radar-loop",
   "version": "0.0.1",
+  "description": "A simple angular element component to display a radar image loop based off the weather radar images in Australia from BOM.",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,6 +9,24 @@
     "test": "ng test",
     "lint": "ng lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wingy3181/bom-radar-loop.git"
+  },
+  "keywords": [
+    "australia",
+    "bom",
+    "weather",
+    "radar",
+    "Bureau",
+    "Meteorology"
+  ],
+  "author": "Cheong Yip <wingy3181@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wingy3181/bom-radar-loop/issues"
+  },
+  "homepage": "https://github.com/wingy3181/bom-radar-loop#readme",
   "dependencies": {
     "@angular/animations": "^6.1.0",
     "@angular/common": "^6.1.0",

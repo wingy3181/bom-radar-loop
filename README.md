@@ -1,30 +1,40 @@
-# BomImageLoop
+# bom-radar-loop
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
+A simple angular element component to display a radar image loop based off the weather radar images in Australia from BOM.
 
-## Development server
+## Usage
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Include `dist/bom-radar-loop.js` as a script inside your HTML or use a CDN such as [unpkg](https://unpkg.com/#/).
+* Use the `<bom-radar-loop>` element in your HTML and specify the radar station via an attribute.
+  > **NOTE: Must be a radar station ID. Rainfall station IDs are currently not supported**
+* For example:
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>BOM Radar Loop</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div>
+      <bom-radar-loop station="IDR713"></bom-radar-loop>
+    </div>
+    <script type="text/javascript" src="bom-radar-loop.js"></script>
+  </body>
+</html>
+```
 
-## Code scaffolding
+## Warning
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Use at your own risk. This angular element is dependent upon the structure of the BOM site remaining consistent. I can not guarantee that changes to the BOM site won't break this code. I will endeavor to keep this up to date but no guarantee can be provided. Feel free to submit an issue / PR on GitHub to help out.
 
-## Build
+## Release History
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* 0.0.1 Initial Alpha Release
 
-## Running unit tests
+## References
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-- https://www.telerik.com/blogs/getting-started-with-angular-elements
-- https://angularfirebase.com/lessons/angular-elements-quick-start-guide/
+* https://www.telerik.com/blogs/getting-started-with-angular-elements
+* https://angularfirebase.com/lessons/angular-elements-quick-start-guide/
