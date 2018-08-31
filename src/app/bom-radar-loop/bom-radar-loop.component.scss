@@ -1,30 +1,25 @@
-$default-width-height: 512;
-$default-height-width-legend: ($default-width-height * (557/512));
-
 .bom-radar-loop {
-    position: absolute; 
-    top: auto; 
-    left: auto; 
+    position: relative;
     z-index: 0; 
     padding: 0px; 
+    padding-bottom: 10%;
     margin: 0px; 
     background-color: transparent; 
     background-repeat: no-repeat;
     background-size: contain;
     display: block; 
-    width: $default-width-height * 1px; 
-    height: $default-height-width-legend * 1px; 
+
     > img {
-        width: $default-width-height * 1px; 
-        height: $default-width-height * 1px; 
+        width: 100%; 
+        height: 100%;
         background-color: transparent; 
         background-repeat: no-repeat;
         background-size: contain;
     }
 
     > div {
-        width: $default-width-height * 1px; 
-        height: $default-width-height * 1px; 
+        width: 100%; 
+        height: 100%;  
         background-color: transparent; 
         background-repeat: no-repeat;
         background-size: contain;
