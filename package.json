@@ -1,6 +1,6 @@
 {
   "name": "bom-radar-loop",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple angular element component to display a radar image loop based off the weather radar images in Australia from BOM.",
   "scripts": {
     "ng": "ng",
